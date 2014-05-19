@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2E0F06F192ACD2D00CF8D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F06E192ACD2D00CF8D6D /* Foundation.framework */; };
+		B2E0F071192ACD2D00CF8D6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F070192ACD2D00CF8D6D /* CoreGraphics.framework */; };
+		B2E0F073192ACD2D00CF8D6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F072192ACD2D00CF8D6D /* UIKit.framework */; };
+		B2E0F075192ACD2D00CF8D6D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F074192ACD2D00CF8D6D /* CoreData.framework */; };
+		B2E0F07B192ACD2D00CF8D6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2E0F079192ACD2D00CF8D6D /* InfoPlist.strings */; };
+		B2E0F07D192ACD2D00CF8D6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0F07C192ACD2D00CF8D6D /* main.m */; };
+		B2E0F081192ACD2D00CF8D6D /* LPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0F080192ACD2D00CF8D6D /* LPAppDelegate.m */; };
+		B2E0F084192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2E0F082192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld */; };
+		B2E0F086192ACD2D00CF8D6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E0F085192ACD2D00CF8D6D /* Images.xcassets */; };
+		B2E0F08D192ACD2D00CF8D6D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F08C192ACD2D00CF8D6D /* XCTest.framework */; };
+		B2E0F08E192ACD2D00CF8D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F06E192ACD2D00CF8D6D /* Foundation.framework */; };
+		B2E0F08F192ACD2D00CF8D6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F072192ACD2D00CF8D6D /* UIKit.framework */; };
+		B2E0F090192ACD2D00CF8D6D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F074192ACD2D00CF8D6D /* CoreData.framework */; };
+		B2E0F098192ACD2D00CF8D6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2E0F096192ACD2D00CF8D6D /* InfoPlist.strings */; };
+		B2E0F09A192ACD2D00CF8D6D /* Lunch_PollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0F099192ACD2D00CF8D6D /* Lunch_PollTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2E0F091192ACD2D00CF8D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2E0F063192ACD2D00CF8D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E0F06A192ACD2D00CF8D6D;
+			remoteInfo = "Lunch Poll";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2E0F06B192ACD2D00CF8D6D /* Lunch Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Poll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E0F06E192ACD2D00CF8D6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B2E0F070192ACD2D00CF8D6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B2E0F072192ACD2D00CF8D6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B2E0F074192ACD2D00CF8D6D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B2E0F078192ACD2D00CF8D6D /* Lunch Poll-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lunch Poll-Info.plist"; sourceTree = "<group>"; };
+		B2E0F07A192ACD2D00CF8D6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2E0F07C192ACD2D00CF8D6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2E0F07E192ACD2D00CF8D6D /* Lunch Poll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lunch Poll-Prefix.pch"; sourceTree = "<group>"; };
+		B2E0F07F192ACD2D00CF8D6D /* LPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAppDelegate.h; sourceTree = "<group>"; };
+		B2E0F080192ACD2D00CF8D6D /* LPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAppDelegate.m; sourceTree = "<group>"; };
+		B2E0F083192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lunch_Poll.xcdatamodel; sourceTree = "<group>"; };
+		B2E0F085192ACD2D00CF8D6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2E0F08B192ACD2D00CF8D6D /* Lunch PollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lunch PollTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E0F08C192ACD2D00CF8D6D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B2E0F095192ACD2D00CF8D6D /* Lunch PollTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lunch PollTests-Info.plist"; sourceTree = "<group>"; };
+		B2E0F097192ACD2D00CF8D6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2E0F099192ACD2D00CF8D6D /* Lunch_PollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lunch_PollTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2E0F068192ACD2D00CF8D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E0F071192ACD2D00CF8D6D /* CoreGraphics.framework in Frameworks */,
+				B2E0F075192ACD2D00CF8D6D /* CoreData.framework in Frameworks */,
+				B2E0F073192ACD2D00CF8D6D /* UIKit.framework in Frameworks */,
+				B2E0F06F192ACD2D00CF8D6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E0F088192ACD2D00CF8D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E0F08D192ACD2D00CF8D6D /* XCTest.framework in Frameworks */,
+				B2E0F090192ACD2D00CF8D6D /* CoreData.framework in Frameworks */,
+				B2E0F08F192ACD2D00CF8D6D /* UIKit.framework in Frameworks */,
+				B2E0F08E192ACD2D00CF8D6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2E0F062192ACD2D00CF8D6D = {
+			isa = PBXGroup;
+			children = (
+				B2E0F076192ACD2D00CF8D6D /* Lunch Poll */,
+				B2E0F093192ACD2D00CF8D6D /* Lunch PollTests */,
+				B2E0F06D192ACD2D00CF8D6D /* Frameworks */,
+				B2E0F06C192ACD2D00CF8D6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2E0F06C192ACD2D00CF8D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0F06B192ACD2D00CF8D6D /* Lunch Poll.app */,
+				B2E0F08B192ACD2D00CF8D6D /* Lunch PollTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2E0F06D192ACD2D00CF8D6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0F06E192ACD2D00CF8D6D /* Foundation.framework */,
+				B2E0F070192ACD2D00CF8D6D /* CoreGraphics.framework */,
+				B2E0F072192ACD2D00CF8D6D /* UIKit.framework */,
+				B2E0F074192ACD2D00CF8D6D /* CoreData.framework */,
+				B2E0F08C192ACD2D00CF8D6D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2E0F076192ACD2D00CF8D6D /* Lunch Poll */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0F07F192ACD2D00CF8D6D /* LPAppDelegate.h */,
+				B2E0F080192ACD2D00CF8D6D /* LPAppDelegate.m */,
+				B2E0F085192ACD2D00CF8D6D /* Images.xcassets */,
+				B2E0F082192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld */,
+				B2E0F077192ACD2D00CF8D6D /* Supporting Files */,
+			);
+			path = "Lunch Poll";
+			sourceTree = "<group>";
+		};
+		B2E0F077192ACD2D00CF8D6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0F078192ACD2D00CF8D6D /* Lunch Poll-Info.plist */,
+				B2E0F079192ACD2D00CF8D6D /* InfoPlist.strings */,
+				B2E0F07C192ACD2D00CF8D6D /* main.m */,
+				B2E0F07E192ACD2D00CF8D6D /* Lunch Poll-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2E0F093192ACD2D00CF8D6D /* Lunch PollTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0F099192ACD2D00CF8D6D /* Lunch_PollTests.m */,
+				B2E0F094192ACD2D00CF8D6D /* Supporting Files */,
+			);
+			path = "Lunch PollTests";
+			sourceTree = "<group>";
+		};
+		B2E0F094192ACD2D00CF8D6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0F095192ACD2D00CF8D6D /* Lunch PollTests-Info.plist */,
+				B2E0F096192ACD2D00CF8D6D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2E0F06A192ACD2D00CF8D6D /* Lunch Poll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E0F09D192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch Poll" */;
+			buildPhases = (
+				B2E0F067192ACD2D00CF8D6D /* Sources */,
+				B2E0F068192ACD2D00CF8D6D /* Frameworks */,
+				B2E0F069192ACD2D00CF8D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lunch Poll";
+			productName = "Lunch Poll";
+			productReference = B2E0F06B192ACD2D00CF8D6D /* Lunch Poll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2E0F08A192ACD2D00CF8D6D /* Lunch PollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E0F0A0192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch PollTests" */;
+			buildPhases = (
+				B2E0F087192ACD2D00CF8D6D /* Sources */,
+				B2E0F088192ACD2D00CF8D6D /* Frameworks */,
+				B2E0F089192ACD2D00CF8D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2E0F092192ACD2D00CF8D6D /* PBXTargetDependency */,
+			);
+			name = "Lunch PollTests";
+			productName = "Lunch PollTests";
+			productReference = B2E0F08B192ACD2D00CF8D6D /* Lunch PollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2E0F063192ACD2D00CF8D6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Apple, Inc";
+				TargetAttributes = {
+					B2E0F08A192ACD2D00CF8D6D = {
+						TestTargetID = B2E0F06A192ACD2D00CF8D6D;
+					};
+				};
+			};
+			buildConfigurationList = B2E0F066192ACD2D00CF8D6D /* Build configuration list for PBXProject "Lunch Poll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B2E0F062192ACD2D00CF8D6D;
+			productRefGroup = B2E0F06C192ACD2D00CF8D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2E0F06A192ACD2D00CF8D6D /* Lunch Poll */,
+				B2E0F08A192ACD2D00CF8D6D /* Lunch PollTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2E0F069192ACD2D00CF8D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E0F07B192ACD2D00CF8D6D /* InfoPlist.strings in Resources */,
+				B2E0F086192ACD2D00CF8D6D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E0F089192ACD2D00CF8D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E0F098192ACD2D00CF8D6D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2E0F067192ACD2D00CF8D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E0F081192ACD2D00CF8D6D /* LPAppDelegate.m in Sources */,
+				B2E0F084192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld in Sources */,
+				B2E0F07D192ACD2D00CF8D6D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E0F087192ACD2D00CF8D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E0F09A192ACD2D00CF8D6D /* Lunch_PollTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2E0F092192ACD2D00CF8D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2E0F06A192ACD2D00CF8D6D /* Lunch Poll */;
+			targetProxy = B2E0F091192ACD2D00CF8D6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2E0F079192ACD2D00CF8D6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E0F07A192ACD2D00CF8D6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B2E0F096192ACD2D00CF8D6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E0F097192ACD2D00CF8D6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2E0F09B192ACD2D00CF8D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2E0F09C192ACD2D00CF8D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2E0F09E192ACD2D00CF8D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lunch Poll/Lunch Poll-Prefix.pch";
+				INFOPLIST_FILE = "Lunch Poll/Lunch Poll-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B2E0F09F192ACD2D00CF8D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lunch Poll/Lunch Poll-Prefix.pch";
+				INFOPLIST_FILE = "Lunch Poll/Lunch Poll-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B2E0F0A1192ACD2D00CF8D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lunch Poll.app/Lunch Poll";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lunch Poll/Lunch Poll-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lunch PollTests/Lunch PollTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B2E0F0A2192ACD2D00CF8D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lunch Poll.app/Lunch Poll";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lunch Poll/Lunch Poll-Prefix.pch";
+				INFOPLIST_FILE = "Lunch PollTests/Lunch PollTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2E0F066192ACD2D00CF8D6D /* Build configuration list for PBXProject "Lunch Poll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E0F09B192ACD2D00CF8D6D /* Debug */,
+				B2E0F09C192ACD2D00CF8D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E0F09D192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch Poll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E0F09E192ACD2D00CF8D6D /* Debug */,
+				B2E0F09F192ACD2D00CF8D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2E0F0A0192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch PollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E0F0A1192ACD2D00CF8D6D /* Debug */,
+				B2E0F0A2192ACD2D00CF8D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B2E0F082192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2E0F083192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodel */,
+			);
+			currentVersion = B2E0F083192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodel */;
+			path = Lunch_Poll.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B2E0F063192ACD2D00CF8D6D /* Project object */;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>53736F23-42C3-464D-8988-443627FC1347</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lunch Poll</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4EE5C3DD-80D9-4B40-BE33-842FEC92A54D</key>
+		<string>ssh://github.com/gandrewb/lunchpoll.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS App/Lunch Poll/Lunch Poll.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4EE5C3DD-80D9-4B40-BE33-842FEC92A54D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/gandrewb/lunchpoll.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4EE5C3DD-80D9-4B40-BE33-842FEC92A54D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4EE5C3DD-80D9-4B40-BE33-842FEC92A54D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lunchpoll</string>
+		</dict>
+	</array>
+</dict>
+</plist>
