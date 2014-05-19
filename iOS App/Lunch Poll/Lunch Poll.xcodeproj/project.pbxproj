@@ -118,7 +118,7 @@
 				B2E0F07F192ACD2D00CF8D6D /* LPAppDelegate.h */,
 				B2E0F080192ACD2D00CF8D6D /* LPAppDelegate.m */,
 				B2E0F085192ACD2D00CF8D6D /* Images.xcassets */,
-				B2E0F082192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld */,
+				B2E0F0A3192ACDB300CF8D6D /* Core Data */,
 				B2E0F077192ACD2D00CF8D6D /* Supporting Files */,
 			);
 			path = "Lunch Poll";
@@ -151,6 +151,14 @@
 				B2E0F096192ACD2D00CF8D6D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2E0F0A3192ACDB300CF8D6D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0F082192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +458,7 @@
 				B2E0F09F192ACD2D00CF8D6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2E0F0A0192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch PollTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +467,7 @@
 				B2E0F0A2192ACD2D00CF8D6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
