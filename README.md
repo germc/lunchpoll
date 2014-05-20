@@ -10,7 +10,8 @@ Our aim is to create the best online polling and chat system the Friday lunch ha
 * Add Restaurant to Eat
 	* From History
 	* New Restaurant
-* Vote up (maybe even down) an existing restaurant
+* Vote up and down an existing restaurant
+	* I would argue for voting down for the cases like: "I would eat anywhere except X", that way you could actually mark down the X if you would be content with anything else winning, just not that.
 * See real-time restaurant standings
 	* We could do some pretty cool designs with showing a currently *winning* restaurant 
 * Weekly thread discussion of lunch plans
@@ -24,6 +25,8 @@ Our aim is to create the best online polling and chat system the Friday lunch ha
 
 
 ##Object breakdown
+Note: Totally realize you'll do this better than I. Also, do we want to use something like Parse or just have you roll our own? Benefits I can see with using parse: built in APN (Apple Push Notification) support.
+
 
 ###Restaurant
 
@@ -31,6 +34,9 @@ Our aim is to create the best online polling and chat system the Friday lunch ha
 * Food Category/Type
 * Address
 * Website
+* Weeks
+	* Votes Up
+	* Votes Down
 
 ###Person
 
