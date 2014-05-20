@@ -11,7 +11,7 @@ Our aim is to create the best online polling and chat system the Friday lunch ha
 	* From History
 	* New Restaurant
 * Vote up and down an existing restaurant
-	* I would argue for voting down for the cases like: "I would eat anywhere except X", that way you could actually mark down the X if you would be content with anything else winning, just not that.
+	* I would argue for voting down for the cases like: "I would eat anywhere except X", that way you could actually mark down the X if you would be content with anything else winning, just not that. However, Reed suggested that downvoting could actually be detrimental to the voting process. (see https://medium.com/the-physics-arxiv-blog/aad9d49da238)
 * See real-time restaurant standings
 	* We could do some pretty cool designs with showing a currently *winning* restaurant 
 * Weekly thread discussion of lunch plans
