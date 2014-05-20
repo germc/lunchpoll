@@ -13,9 +13,13 @@ Our aim is to create the best online polling and chat system the Friday lunch ha
 	* From History
 	* New Restaurant
 * Vote up and down an existing restaurant
+<<<<<<< HEAD
 	* I would argue for voting down for the cases like: "I would eat anywhere except X", that way you could actually mark down the X if you would be content with anything else winning, just not that.
 	• The group had this discussion once. The general consensus seemed to be against the down-vote. But I'm not opposed to re-visiting the idea.
 		• Or what if it was a feature that could turn itself on if the deadline is close and there's a tie? — that could be overkill, and confusing, but just another idea
+=======
+	* I would argue for voting down for the cases like: "I would eat anywhere except X", that way you could actually mark down the X if you would be content with anything else winning, just not that. However, Reed suggested that downvoting could actually be detrimental to the voting process. (see https://medium.com/the-physics-arxiv-blog/aad9d49da238)
+>>>>>>> FETCH_HEAD
 * See real-time restaurant standings
 	* We could do some pretty cool designs with showing a currently *winning* restaurant 
 * Weekly thread discussion of lunch plans
@@ -44,6 +48,7 @@ Note: Totally realize you'll do this better than I. Also, do we want to use some
 	* Website (String)
 
 ###Person
+<<<<<<< HEAD
 	* Name (String)
 	* Email (String)
 	* Password (String)
@@ -64,3 +69,11 @@ Note: Totally realize you'll do this better than I. Also, do we want to use some
 		• Message (String)
 		• Timestamp (Date)
 	
+=======
+
+* Name
+* Email (Apple?)
+* Password
+* Usually have a Car Y/N?
+* Usual Building?
+>>>>>>> FETCH_HEAD
