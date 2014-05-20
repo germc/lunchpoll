@@ -1,488 +1,1158 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		B2E0F06F192ACD2D00CF8D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F06E192ACD2D00CF8D6D /* Foundation.framework */; };
-		B2E0F071192ACD2D00CF8D6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F070192ACD2D00CF8D6D /* CoreGraphics.framework */; };
-		B2E0F073192ACD2D00CF8D6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F072192ACD2D00CF8D6D /* UIKit.framework */; };
-		B2E0F075192ACD2D00CF8D6D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F074192ACD2D00CF8D6D /* CoreData.framework */; };
-		B2E0F07B192ACD2D00CF8D6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2E0F079192ACD2D00CF8D6D /* InfoPlist.strings */; };
-		B2E0F07D192ACD2D00CF8D6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0F07C192ACD2D00CF8D6D /* main.m */; };
-		B2E0F081192ACD2D00CF8D6D /* LPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0F080192ACD2D00CF8D6D /* LPAppDelegate.m */; };
-		B2E0F084192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2E0F082192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld */; };
-		B2E0F086192ACD2D00CF8D6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E0F085192ACD2D00CF8D6D /* Images.xcassets */; };
-		B2E0F08D192ACD2D00CF8D6D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F08C192ACD2D00CF8D6D /* XCTest.framework */; };
-		B2E0F08E192ACD2D00CF8D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F06E192ACD2D00CF8D6D /* Foundation.framework */; };
-		B2E0F08F192ACD2D00CF8D6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F072192ACD2D00CF8D6D /* UIKit.framework */; };
-		B2E0F090192ACD2D00CF8D6D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E0F074192ACD2D00CF8D6D /* CoreData.framework */; };
-		B2E0F098192ACD2D00CF8D6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2E0F096192ACD2D00CF8D6D /* InfoPlist.strings */; };
-		B2E0F09A192ACD2D00CF8D6D /* Lunch_PollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0F099192ACD2D00CF8D6D /* Lunch_PollTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B2E0F091192ACD2D00CF8D6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B2E0F063192ACD2D00CF8D6D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B2E0F06A192ACD2D00CF8D6D;
-			remoteInfo = "Lunch Poll";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		B2E0F06B192ACD2D00CF8D6D /* Lunch Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Poll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2E0F06E192ACD2D00CF8D6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B2E0F070192ACD2D00CF8D6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B2E0F072192ACD2D00CF8D6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B2E0F074192ACD2D00CF8D6D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		B2E0F078192ACD2D00CF8D6D /* Lunch Poll-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lunch Poll-Info.plist"; sourceTree = "<group>"; };
-		B2E0F07A192ACD2D00CF8D6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B2E0F07C192ACD2D00CF8D6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B2E0F07E192ACD2D00CF8D6D /* Lunch Poll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lunch Poll-Prefix.pch"; sourceTree = "<group>"; };
-		B2E0F07F192ACD2D00CF8D6D /* LPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAppDelegate.h; sourceTree = "<group>"; };
-		B2E0F080192ACD2D00CF8D6D /* LPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAppDelegate.m; sourceTree = "<group>"; };
-		B2E0F083192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lunch_Poll.xcdatamodel; sourceTree = "<group>"; };
-		B2E0F085192ACD2D00CF8D6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B2E0F08B192ACD2D00CF8D6D /* Lunch PollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lunch PollTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2E0F08C192ACD2D00CF8D6D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B2E0F095192ACD2D00CF8D6D /* Lunch PollTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lunch PollTests-Info.plist"; sourceTree = "<group>"; };
-		B2E0F097192ACD2D00CF8D6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B2E0F099192ACD2D00CF8D6D /* Lunch_PollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lunch_PollTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		B2E0F068192ACD2D00CF8D6D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2E0F071192ACD2D00CF8D6D /* CoreGraphics.framework in Frameworks */,
-				B2E0F075192ACD2D00CF8D6D /* CoreData.framework in Frameworks */,
-				B2E0F073192ACD2D00CF8D6D /* UIKit.framework in Frameworks */,
-				B2E0F06F192ACD2D00CF8D6D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2E0F088192ACD2D00CF8D6D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2E0F08D192ACD2D00CF8D6D /* XCTest.framework in Frameworks */,
-				B2E0F090192ACD2D00CF8D6D /* CoreData.framework in Frameworks */,
-				B2E0F08F192ACD2D00CF8D6D /* UIKit.framework in Frameworks */,
-				B2E0F08E192ACD2D00CF8D6D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		B2E0F062192ACD2D00CF8D6D = {
-			isa = PBXGroup;
-			children = (
-				B2E0F076192ACD2D00CF8D6D /* Lunch Poll */,
-				B2E0F093192ACD2D00CF8D6D /* Lunch PollTests */,
-				B2E0F06D192ACD2D00CF8D6D /* Frameworks */,
-				B2E0F06C192ACD2D00CF8D6D /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		B2E0F06C192ACD2D00CF8D6D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B2E0F06B192ACD2D00CF8D6D /* Lunch Poll.app */,
-				B2E0F08B192ACD2D00CF8D6D /* Lunch PollTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B2E0F06D192ACD2D00CF8D6D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B2E0F06E192ACD2D00CF8D6D /* Foundation.framework */,
-				B2E0F070192ACD2D00CF8D6D /* CoreGraphics.framework */,
-				B2E0F072192ACD2D00CF8D6D /* UIKit.framework */,
-				B2E0F074192ACD2D00CF8D6D /* CoreData.framework */,
-				B2E0F08C192ACD2D00CF8D6D /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B2E0F076192ACD2D00CF8D6D /* Lunch Poll */ = {
-			isa = PBXGroup;
-			children = (
-				B2E0F07F192ACD2D00CF8D6D /* LPAppDelegate.h */,
-				B2E0F080192ACD2D00CF8D6D /* LPAppDelegate.m */,
-				B2E0F085192ACD2D00CF8D6D /* Images.xcassets */,
-				B2E0F0A3192ACDB300CF8D6D /* Core Data */,
-				B2E0F077192ACD2D00CF8D6D /* Supporting Files */,
-			);
-			path = "Lunch Poll";
-			sourceTree = "<group>";
-		};
-		B2E0F077192ACD2D00CF8D6D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2E0F078192ACD2D00CF8D6D /* Lunch Poll-Info.plist */,
-				B2E0F079192ACD2D00CF8D6D /* InfoPlist.strings */,
-				B2E0F07C192ACD2D00CF8D6D /* main.m */,
-				B2E0F07E192ACD2D00CF8D6D /* Lunch Poll-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B2E0F093192ACD2D00CF8D6D /* Lunch PollTests */ = {
-			isa = PBXGroup;
-			children = (
-				B2E0F099192ACD2D00CF8D6D /* Lunch_PollTests.m */,
-				B2E0F094192ACD2D00CF8D6D /* Supporting Files */,
-			);
-			path = "Lunch PollTests";
-			sourceTree = "<group>";
-		};
-		B2E0F094192ACD2D00CF8D6D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2E0F095192ACD2D00CF8D6D /* Lunch PollTests-Info.plist */,
-				B2E0F096192ACD2D00CF8D6D /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B2E0F0A3192ACDB300CF8D6D /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-				B2E0F082192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld */,
-			);
-			name = "Core Data";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		B2E0F06A192ACD2D00CF8D6D /* Lunch Poll */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B2E0F09D192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch Poll" */;
-			buildPhases = (
-				B2E0F067192ACD2D00CF8D6D /* Sources */,
-				B2E0F068192ACD2D00CF8D6D /* Frameworks */,
-				B2E0F069192ACD2D00CF8D6D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Lunch Poll";
-			productName = "Lunch Poll";
-			productReference = B2E0F06B192ACD2D00CF8D6D /* Lunch Poll.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B2E0F08A192ACD2D00CF8D6D /* Lunch PollTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B2E0F0A0192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch PollTests" */;
-			buildPhases = (
-				B2E0F087192ACD2D00CF8D6D /* Sources */,
-				B2E0F088192ACD2D00CF8D6D /* Frameworks */,
-				B2E0F089192ACD2D00CF8D6D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B2E0F092192ACD2D00CF8D6D /* PBXTargetDependency */,
-			);
-			name = "Lunch PollTests";
-			productName = "Lunch PollTests";
-			productReference = B2E0F08B192ACD2D00CF8D6D /* Lunch PollTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		B2E0F063192ACD2D00CF8D6D /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = LP;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Apple, Inc";
-				TargetAttributes = {
-					B2E0F08A192ACD2D00CF8D6D = {
-						TestTargetID = B2E0F06A192ACD2D00CF8D6D;
-					};
-				};
-			};
-			buildConfigurationList = B2E0F066192ACD2D00CF8D6D /* Build configuration list for PBXProject "Lunch Poll" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = B2E0F062192ACD2D00CF8D6D;
-			productRefGroup = B2E0F06C192ACD2D00CF8D6D /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B2E0F06A192ACD2D00CF8D6D /* Lunch Poll */,
-				B2E0F08A192ACD2D00CF8D6D /* Lunch PollTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		B2E0F069192ACD2D00CF8D6D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2E0F07B192ACD2D00CF8D6D /* InfoPlist.strings in Resources */,
-				B2E0F086192ACD2D00CF8D6D /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2E0F089192ACD2D00CF8D6D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2E0F098192ACD2D00CF8D6D /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		B2E0F067192ACD2D00CF8D6D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2E0F081192ACD2D00CF8D6D /* LPAppDelegate.m in Sources */,
-				B2E0F084192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld in Sources */,
-				B2E0F07D192ACD2D00CF8D6D /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2E0F087192ACD2D00CF8D6D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2E0F09A192ACD2D00CF8D6D /* Lunch_PollTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B2E0F092192ACD2D00CF8D6D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B2E0F06A192ACD2D00CF8D6D /* Lunch Poll */;
-			targetProxy = B2E0F091192ACD2D00CF8D6D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B2E0F079192ACD2D00CF8D6D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2E0F07A192ACD2D00CF8D6D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B2E0F096192ACD2D00CF8D6D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2E0F097192ACD2D00CF8D6D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		B2E0F09B192ACD2D00CF8D6D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B2E0F09C192ACD2D00CF8D6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B2E0F09E192ACD2D00CF8D6D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Lunch Poll/Lunch Poll-Prefix.pch";
-				INFOPLIST_FILE = "Lunch Poll/Lunch Poll-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		B2E0F09F192ACD2D00CF8D6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Lunch Poll/Lunch Poll-Prefix.pch";
-				INFOPLIST_FILE = "Lunch Poll/Lunch Poll-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		B2E0F0A1192ACD2D00CF8D6D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lunch Poll.app/Lunch Poll";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Lunch Poll/Lunch Poll-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Lunch PollTests/Lunch PollTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		B2E0F0A2192ACD2D00CF8D6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lunch Poll.app/Lunch Poll";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Lunch Poll/Lunch Poll-Prefix.pch";
-				INFOPLIST_FILE = "Lunch PollTests/Lunch PollTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		B2E0F066192ACD2D00CF8D6D /* Build configuration list for PBXProject "Lunch Poll" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B2E0F09B192ACD2D00CF8D6D /* Debug */,
-				B2E0F09C192ACD2D00CF8D6D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B2E0F09D192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch Poll" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B2E0F09E192ACD2D00CF8D6D /* Debug */,
-				B2E0F09F192ACD2D00CF8D6D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B2E0F0A0192ACD2D00CF8D6D /* Build configuration list for PBXNativeTarget "Lunch PollTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B2E0F0A1192ACD2D00CF8D6D /* Debug */,
-				B2E0F0A2192ACD2D00CF8D6D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B2E0F082192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B2E0F083192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodel */,
-			);
-			currentVersion = B2E0F083192ACD2D00CF8D6D /* Lunch_Poll.xcdatamodel */;
-			path = Lunch_Poll.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = B2E0F063192ACD2D00CF8D6D /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>464EBD6D2BD74766880C05B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>4EE1C214E2994201AFD32652</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>81D3148501F244E884BE3CC7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B73D5D404C54A498B4C29F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8FD36CAF2A484A2499CD79AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B73D5D404C54A498B4C29F5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B2889654192BD3A9001170B3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LPDataManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2889655192BD3A9001170B3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LPDataManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2889656192BD3A9001170B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2889655192BD3A9001170B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2889657192BD458001170B3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Podfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2889658192BD458001170B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2889657192BD458001170B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F062192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2889657192BD458001170B3</string>
+				<string>B2E0F076192ACD2D00CF8D6D</string>
+				<string>B2E0F093192ACD2D00CF8D6D</string>
+				<string>B2E0F06D192ACD2D00CF8D6D</string>
+				<string>B2E0F06C192ACD2D00CF8D6D</string>
+				<string>8FD36CAF2A484A2499CD79AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F063192ACD2D00CF8D6D</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>LP</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Apple, Inc</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>B2E0F08A192ACD2D00CF8D6D</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>B2E0F06A192ACD2D00CF8D6D</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>B2E0F066192ACD2D00CF8D6D</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>B2E0F062192ACD2D00CF8D6D</string>
+			<key>productRefGroup</key>
+			<string>B2E0F06C192ACD2D00CF8D6D</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>B2E0F06A192ACD2D00CF8D6D</string>
+				<string>B2E0F08A192ACD2D00CF8D6D</string>
+			</array>
+		</dict>
+		<key>B2E0F066192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B2E0F09B192ACD2D00CF8D6D</string>
+				<string>B2E0F09C192ACD2D00CF8D6D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B2E0F067192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2E0F081192ACD2D00CF8D6D</string>
+				<string>B2E0F084192ACD2D00CF8D6D</string>
+				<string>B2E0F07D192ACD2D00CF8D6D</string>
+				<string>B2889656192BD3A9001170B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B2E0F068192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2E0F071192ACD2D00CF8D6D</string>
+				<string>B2E0F075192ACD2D00CF8D6D</string>
+				<string>B2E0F073192ACD2D00CF8D6D</string>
+				<string>B2E0F06F192ACD2D00CF8D6D</string>
+				<string>81D3148501F244E884BE3CC7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B2E0F069192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2889658192BD458001170B3</string>
+				<string>B2E0F07B192ACD2D00CF8D6D</string>
+				<string>B2E0F086192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B2E0F06A192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B2E0F09D192ACD2D00CF8D6D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>464EBD6D2BD74766880C05B4</string>
+				<string>B2E0F067192ACD2D00CF8D6D</string>
+				<string>B2E0F068192ACD2D00CF8D6D</string>
+				<string>B2E0F069192ACD2D00CF8D6D</string>
+				<string>4EE1C214E2994201AFD32652</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Lunch Poll</string>
+			<key>productName</key>
+			<string>Lunch Poll</string>
+			<key>productReference</key>
+			<string>B2E0F06B192ACD2D00CF8D6D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>B2E0F06B192ACD2D00CF8D6D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Lunch Poll.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B2E0F06C192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F06B192ACD2D00CF8D6D</string>
+				<string>B2E0F08B192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F06D192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F06E192ACD2D00CF8D6D</string>
+				<string>B2E0F070192ACD2D00CF8D6D</string>
+				<string>B2E0F072192ACD2D00CF8D6D</string>
+				<string>B2E0F074192ACD2D00CF8D6D</string>
+				<string>B2E0F08C192ACD2D00CF8D6D</string>
+				<string>9B73D5D404C54A498B4C29F5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F06E192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B2E0F06F192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F06E192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F070192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B2E0F071192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F070192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F072192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B2E0F073192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F072192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F074192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B2E0F075192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F074192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F076192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F07F192ACD2D00CF8D6D</string>
+				<string>B2E0F080192ACD2D00CF8D6D</string>
+				<string>B2E0F085192ACD2D00CF8D6D</string>
+				<string>B2E0F0A3192ACDB300CF8D6D</string>
+				<string>B2E0F077192ACD2D00CF8D6D</string>
+				<string>B2889654192BD3A9001170B3</string>
+				<string>B2889655192BD3A9001170B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Lunch Poll</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F077192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F078192ACD2D00CF8D6D</string>
+				<string>B2E0F079192ACD2D00CF8D6D</string>
+				<string>B2E0F07C192ACD2D00CF8D6D</string>
+				<string>B2E0F07E192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F078192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Lunch Poll-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F079192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F07A192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F07A192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F07B192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F079192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F07C192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F07D192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F07C192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F07E192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Lunch Poll-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F07F192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LPAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F080192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LPAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F081192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F080192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F082192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F083192ACD2D00CF8D6D</string>
+			</array>
+			<key>currentVersion</key>
+			<string>B2E0F083192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>Lunch_Poll.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>B2E0F083192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>Lunch_Poll.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F084192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F082192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F085192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F086192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F085192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F087192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2E0F09A192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B2E0F088192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2E0F08D192ACD2D00CF8D6D</string>
+				<string>B2E0F090192ACD2D00CF8D6D</string>
+				<string>B2E0F08F192ACD2D00CF8D6D</string>
+				<string>B2E0F08E192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B2E0F089192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2E0F098192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B2E0F08A192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B2E0F0A0192ACD2D00CF8D6D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B2E0F087192ACD2D00CF8D6D</string>
+				<string>B2E0F088192ACD2D00CF8D6D</string>
+				<string>B2E0F089192ACD2D00CF8D6D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B2E0F092192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Lunch PollTests</string>
+			<key>productName</key>
+			<string>Lunch PollTests</string>
+			<key>productReference</key>
+			<string>B2E0F08B192ACD2D00CF8D6D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>B2E0F08B192ACD2D00CF8D6D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Lunch PollTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B2E0F08C192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>B2E0F08D192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F08C192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F08E192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F06E192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F08F192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F072192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F090192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F074192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F091192ACD2D00CF8D6D</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>B2E0F063192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B2E0F06A192ACD2D00CF8D6D</string>
+			<key>remoteInfo</key>
+			<string>Lunch Poll</string>
+		</dict>
+		<key>B2E0F092192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>B2E0F06A192ACD2D00CF8D6D</string>
+			<key>targetProxy</key>
+			<string>B2E0F091192ACD2D00CF8D6D</string>
+		</dict>
+		<key>B2E0F093192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F099192ACD2D00CF8D6D</string>
+				<string>B2E0F094192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Lunch PollTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F094192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F095192ACD2D00CF8D6D</string>
+				<string>B2E0F096192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F095192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Lunch PollTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F096192ACD2D00CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F097192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F097192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F098192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F096192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F099192ACD2D00CF8D6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Lunch_PollTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2E0F09A192ACD2D00CF8D6D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2E0F099192ACD2D00CF8D6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2E0F09B192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B2E0F09C192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B2E0F09D192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B2E0F09E192ACD2D00CF8D6D</string>
+				<string>B2E0F09F192ACD2D00CF8D6D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B2E0F09E192ACD2D00CF8D6D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8FD36CAF2A484A2499CD79AA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Lunch Poll/Lunch Poll-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Lunch Poll/Lunch Poll-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B2E0F09F192ACD2D00CF8D6D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8FD36CAF2A484A2499CD79AA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Lunch Poll/Lunch Poll-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Lunch Poll/Lunch Poll-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B2E0F0A0192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B2E0F0A1192ACD2D00CF8D6D</string>
+				<string>B2E0F0A2192ACD2D00CF8D6D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B2E0F0A1192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Lunch Poll.app/Lunch Poll</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Lunch Poll/Lunch Poll-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Lunch PollTests/Lunch PollTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B2E0F0A2192ACD2D00CF8D6D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Lunch Poll.app/Lunch Poll</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Lunch Poll/Lunch Poll-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Lunch PollTests/Lunch PollTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B2E0F0A3192ACDB300CF8D6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2E0F082192ACD2D00CF8D6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Core Data</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>B2E0F063192ACD2D00CF8D6D</string>
+</dict>
+</plist>
