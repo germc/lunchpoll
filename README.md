@@ -2,6 +2,7 @@ Friday Lunch Poll
 =========
 
 Our aim is to create the best online polling and chat system the Friday lunch has ever seen. Amen!
+http://fridaylun.ch — So, that just happened.
 
 ##Suggested Features
 
