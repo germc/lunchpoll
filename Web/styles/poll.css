@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+html{
+	background-color: hsl(213, 11%, 19%);
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Helvetica Neue';
+	font-weight: 200;
+	color: #eef;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 200;
+}
+h1{
+	font-size: 2.4rem;
+	padding: .75em 1rem;
+}
+a{
+	color: hsl(230, 50%, 70%);
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+section{
+	background-color: hsl(213, 11%, 15%);
+	min-height: 3em;
+}
