@@ -13,10 +13,7 @@ http://fridaylun.ch — So, that just happened.
 * Add Restaurant to Poll
 	* From History
 	* New Restaurant
-* Vote up and down an existing restaurant
-	* I would argue for voting down for the cases like: "I would eat anywhere except X", that way you could actually mark down the X if you would be content with anything else winning, just not that. 
-		However, Reed suggested that down-voting could actually be detrimental to the voting process. (see https://medium.com/the-physics-arxiv-blog/aad9d49da238)
-	* The group had this discussion once. The general consensus seemed to be against the down-vote. But I'm not opposed to re-visiting the idea.
+* Vote up an existing restaurant
 	* Or what if it was a feature that could turn itself on if the deadline is close and there's a tie? — that could be overkill, and confusing, but just another idea
 * See real-time restaurant standings
 	* We could do some pretty cool designs with showing a currently *winning* restaurant 
