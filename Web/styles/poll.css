@@ -41,44 +41,45 @@ section{
 	padding: 3em;
 	margin-bottom: .5em;
 }
-.restaurant{
-	border-color: hsl(20, 100%, 70%);
-/* 	border-color: #000; */
-	border-style: solid;
-	border-width: 1px 0 0;
-	position: relative;
-	height: 1.75em;
-	font-size: 2rem;
-	max-width: 600px;
-	margin: 0 auto 1.5em;
-}
-.restaurant:last-of-type{
-	margin-bottom: 0;
-}
-	.restaurant h2{
-		position: absolute;
-		bottom: 0;
-		font-size: 1.2em;
-		line-height: 1;
+
+#poll{}
+	.restaurant{
+		border-color: hsl(20, 100%, 70%);
+		border-style: solid;
+		border-width: 1px 0 0;
+		position: relative;
+		height: 1.75em;
+		font-size: 2rem;
+		width: 600px;
+		margin: 0 auto 1.5em;
 	}
-	.title{
-		left: 3.5rem;
-		font-weight: 100;
+	.restaurant:last-of-type{
+		margin-bottom: 0;
 	}
-	.bar_frame{
-		position: absolute;
-		height: .3em;
-		top: 0;
-		left: 3.5rem;
-		right: 0;
-	}
-	.bar{
-		background-color: hsl(20, 100%, 70%);
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-	}
-	.restaurant h2{
-		display: inline-block;
-	}
+		.restaurant h2{
+			position: absolute;
+			bottom: 0;
+			font-size: 1.2em;
+			line-height: 1;
+		}
+		.title{
+			left: 3.5rem;
+			font-weight: 100;
+		}
+		.bar_frame{
+			position: absolute;
+			height: .3em;
+			top: 0;
+			left: 3.5rem;
+			right: 0;
+		}
+		.bar{
+			background-color: hsl(20, 100%, 70%);
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+		}
+		.restaurant h2{
+			display: inline-block;
+		}
