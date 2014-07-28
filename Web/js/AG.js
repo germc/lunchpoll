@@ -111,6 +111,7 @@
 		this.newShift = function(shift){
 			shift.is_transform = (prlx.transforms.indexOf(shift.property)>-1);
 			shift.prop_diff = shift.end_val - shift.start_val;
+			shift.unit = (typeof shift.unit == 'undefined') ? '': shift.unit;
 			
 			var orient = (shift.direction == 'horizontal') ? this.horiz: this.vert;
 			
