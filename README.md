@@ -13,10 +13,7 @@ http://fridaylun.ch — So, that just happened.
 * Add Restaurant to Poll
 	* From History
 	* New Restaurant
-* Vote up and down an existing restaurant
-	* I would argue for voting down for the cases like: "I would eat anywhere except X", that way you could actually mark down the X if you would be content with anything else winning, just not that. 
-		However, Reed suggested that down-voting could actually be detrimental to the voting process. (see https://medium.com/the-physics-arxiv-blog/aad9d49da238)
-	* The group had this discussion once. The general consensus seemed to be against the down-vote. But I'm not opposed to re-visiting the idea.
+* Vote up an existing restaurant
 	* Or what if it was a feature that could turn itself on if the deadline is close and there's a tie? — that could be overkill, and confusing, but just another idea
 * See real-time restaurant standings
 	* We could do some pretty cool designs with showing a currently *winning* restaurant 
@@ -38,6 +35,9 @@ http://fridaylun.ch — So, that just happened.
 	• Most/Least recent restaurants
 	• Most/Least frequent food genres
 	• Most/Least frequently appears in polls
+
+###Brain Storming
+* Could we create a way for the user to 'branch' off a new vote thread? E.g. If "Roundtable" is winning in the original poll, I could say I don't like RoundTable so I have made a poll subthread that keeps all the other votes in tact and they can add different places outside of the first poll. Probably too much work than it's worth.
 
 ##Object breakdown
 Note: Totally realize you'll do this better than I. Also, do we want to use something like Parse or just have you roll our own? Benefits I can see with using parse: built in APN (Apple Push Notification) support.
