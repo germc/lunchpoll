@@ -36,10 +36,8 @@
 	this.parallax = function(el, props){
 		prlx.calc();
 		prlx.parallaxes.push(new Changeling(el, props));
-		if(!prlx.timer){
-			prlx.setPrefix();
-			prlx.timer = setInterval(prlx.render, 15);
-		}
+		prlx.setPrefix();
+		requestAnimationFrame(prlx.render);
 	};
 	
 	var prlx = {
@@ -57,7 +55,8 @@
 		},
 		render: function(){
 			prlx.scroll.top = window.pageYOffset;
-			prlx.scroll.left = window.pageXOffset;		
+			prlx.scroll.left = window.pageXOffset;
+				
 			if(prlx.previous.top!=prlx.scroll.top || prlx.previous.left!=prlx.scroll.left){
 				prlx.previous.top = prlx.scroll.top;
 				prlx.previous.left = prlx.scroll.left;
@@ -65,6 +64,7 @@
 					prlx.parallaxes[x].draw();
 				}
 			}
+			requestAnimationFrame(prlx.render);
 		},
 		setPrefix: function(){
 			var pre = ['transform', 'webkitTransform', 'MozTransform', 'msTransform', 'oTransform'];
