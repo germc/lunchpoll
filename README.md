@@ -28,13 +28,15 @@ http://fridaylun.ch — So, that just happened.
 * Push notification when the deadline has been reached and maybe even send out an email to the group?
 	• A time parameter for each poll that shuts down the poll 15 minutes beforehand and alerts everyone. Noon is default, but can be customized as needed.
 	• User preference to turn types of alerts on and off (email, push notification)
-• Statistics (next to each stat could be an "add to current poll" button)
+* Statistics (next to each stat could be an "add to current poll" button)
 	• Most/Least frequent winners
 	• Most/Least voted for overall
 	• Most/Least active voters
 	• Most/Least recent restaurants
 	• Most/Least frequent food genres
 	• Most/Least frequently appears in polls
+* Must support emoji, urls and inline photos are fun too
+* Make restaurants list sortable by genre
 
 ###Brain Storming
 * Could we create a way for the user to 'branch' off a new vote thread? E.g. If "Roundtable" is winning in the original poll, I could say I don't like RoundTable so I have made a poll subthread that keeps all the other votes in tact and they can add different places outside of the first poll. Probably too much work than it's worth.
